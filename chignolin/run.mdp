@@ -1,0 +1,31 @@
+integrator              = md
+dt                      = 0.002
+nsteps                  = -1
+nstxout                 = 50000
+nstvout                 = 50000
+nstfout                 = 0
+nstxout-compressed      = 0
+;
+cutoff-scheme           = Verlet
+rvdw                    = 0.95
+coulombtype             = PME
+rcoulomb                = 0.95
+;
+tcoupl                  = v-rescale
+tc_grps                 = System
+tau_t                   = 1.0
+ref_t                   = 340
+;
+;pcoupl                  = Parrinello-Rahman
+;pcoupltype              = isotropic
+;tau_p                   = 5.0
+;compressibility         = 4.5e-5
+;ref_p                   = 1.0
+;
+constraints             = h-bonds
+constraint_algorithm    = LINCS
+continuation            = yes
+;
+nstcomm                 = 100
+comm_mode               = linear
+comm_grps               = System

@@ -1,0 +1,6 @@
+python generate.py run1 1000 3 3 1 -s slurm_options.py
+
+for 1000 shooting steps, 3 RFPS chains, 3 eq. A, 1 eq. B, with slurm options
+
+Feel free to play with run1/params.py
+
